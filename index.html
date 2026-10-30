@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unlock site</title>
+  <style>body{font:16px system-ui,sans-serif;max-width:26rem;margin:12vh auto;padding:1rem;color:#172033}label,input,button{display:block}input{box-sizing:border-box;width:100%;padding:.7rem;margin:.5rem 0 1rem}button{padding:.6rem 1rem;cursor:pointer}#message{min-height:1.5em;color:#9b1c1c}</style>
+  <script src="./unlock.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Unlock site</h1>
+    <form id="unlock-form">
+      <label for="passphrase">Passphrase</label>
+      <input id="passphrase" type="password" autocomplete="current-password" required>
+      <button type="submit">Unlock</button>
+      <p id="message" role="status" aria-live="polite"></p>
+    </form>
+    <p>This browser will remember the passphrase for future visits.</p>
+    <button id="forget" type="button">Forget saved passphrase</button>
+  </main>
+</body>
+</html>
